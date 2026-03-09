@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="./src/image/cloudy.png">
+    <title>Clima</title>
+</head>
+<body class="bg-dark d-flex align-items-center min-vh-100">
+
+    <div id="container" class="container bg-primary-subtle shadow rounded-4 p-4 p-md-5" style="max-width: 450px;">
+        
+        <form id="search" class="input-group mb-4">
+            <span class="input-group-text bg-transparent border-end-0">
+                <i class="fa-solid fa-location-dot text-danger"></i>
+            </span>
+            <input type="search" name="city_name" 
+                id="city_name" 
+                class="form-control border-start-0 border-end-0" 
+                placeholder="Buscar cidade"
+            >
+            <button class="btn btn-warning" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div id="weather" class="text-center">
+            <h1 id="title" class="h4 fw-bold text-secondary mb-3">São Paulo, BR</h1>
+
+            <div id="infos">
+                <div id="temp" class="d-flex align-items-center justify-content-center mb-4">
+                    <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="" class="img-fluid" style="width: 100px;">
+                    
+                    <div class="text-start ms-2">
+                        <p id="temp_value" class="display-3 fw-bold mb-0">
+                            32<span class="fs-4 align-top text-muted">°C</span>
+                        </p>
+                        <p id="temp_descricao" class="text-muted text-capitalize mb-0">
+                            Ensolarado
+                        </p>
+                    </div>
+                </div>
+
+                <div id="other_infos" class="row g-3">
+                    <div class="info col-6">
+                        <div class="p-3 border rounded-3 bg-light d-flex align-items-center">
+                            <i id="temp_max_icon" class="fa-solid fa-temperature-high text-danger fs-5 me-2"></i>
+                            <div class="text-start">
+                                <h2 class="small text-muted fw-bold mb-0" style="font-size: 0.7rem;">Max</h2>
+                                <p id="temp_max" class="mb-0 fw-semibold">32 <sup>C°</sup></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info col-6">
+                        <div class="p-3 border rounded-3 bg-light d-flex align-items-center">
+                            <i id="temp_min_icon" class="fa-solid fa-temperature-low text-primary fs-5 me-2"></i>
+                            <div class="text-start">
+                                <h2 class="small text-muted fw-bold mb-0" style="font-size: 0.7rem;">Min</h2>
+                                <p id="temp_min" class="mb-0 fw-semibold">12 <sup>C°</sup></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info col-6">
+                        <div class="p-3 border rounded-3 bg-light d-flex align-items-center">
+                            <i id="humidity_icon" class="fa-solid fa-droplet text-info fs-5 me-2"></i>
+                            <div class="text-start">
+                                <h2 class="small text-muted fw-bold mb-0" style="font-size: 0.7rem;">Humidade</h2>
+                                <p id="humidity" class="mb-0 fw-semibold">50%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info col-6">
+                        <div class="p-3 border rounded-3 bg-light d-flex align-items-center">
+                            <i id="wind_icon" class="fa-solid fa-wind text-success fs-5 me-2"></i>
+                            <div class="text-start">
+                                <h2 class="small text-muted fw-bold mb-0" style="font-size: 0.7rem;">Vento</h2>
+                                <p id="wind" class="mb-0 fw-semibold">50 <small>km/h</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alert" class="mt-3"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
