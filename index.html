@@ -9,13 +9,14 @@
    <link rel="stylesheet" href="src/style.css">
     <title>Clima</title>
 </head>
-<body class="bg-dark d-flex align-items-center flex-column min-vh-100">
+<body class="bg-dark d-flex flex-column min-vh-100 m-0">
 
-<div class="p-2 mt-5 mb-4 text-center">
+<div class="pt-5 text-center">
     <h4 class="text-white fs-5"> Busque uma cidade e veja o clima agora. Planeje seu dia com precisão </h4>
 </div>
 
-    <div id="container" class="container bg-primary-subtle shadow rounded-4 p-4 p-md-5" style="max-width: 450px;">
+<main class="flex-grow-1 d-flex flex-column align-items-center justify-content-center p-3">
+    <div id="container" class="container bg-primary-subtle shadow rounded-4 p-4 p-md-5 " style="max-width: 450px;">
         
         <form id="search" class="input-group mb-4">
             <span class="input-group-text bg-transparent border-end-0">
@@ -95,6 +96,7 @@
         <div id="alert" class="mt-3"></div>
     </div>
 
+</main>
 
 <footer class="w-100 mt-auto">
         <div class="container">
