@@ -6,9 +6,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="icon" href="./src/image/cloudy.png">
+   <link rel="stylesheet" href="src/style.css">
     <title>Clima</title>
 </head>
-<body class="bg-dark d-flex align-items-center min-vh-100">
+<body class="bg-dark d-flex align-items-center flex-column min-vh-100">
+
+<div class="p-2 mt-5 mb-4 text-center">
+    <h4 class="text-white fs-5"> Busque uma cidade e veja o clima agora. Planeje seu dia com precisão </h4>
+</div>
 
     <div id="container" class="container bg-primary-subtle shadow rounded-4 p-4 p-md-5" style="max-width: 450px;">
         
@@ -89,6 +94,15 @@
 
         <div id="alert" class="mt-3"></div>
     </div>
+
+
+    <footer class=" w-100 mt-5">
+<hr class="text-white">
+
+        <div class="mt-2 p-2 text-center" >
+            <p class="text-white">@2026.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/script.js"></script>
